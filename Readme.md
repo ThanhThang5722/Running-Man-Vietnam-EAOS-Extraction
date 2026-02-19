@@ -10,15 +10,15 @@ This project aims to build a deep learning model to extract Name Entity, Aspect,
 ## Model Architecture
 This project implement Transformer-Encoder with Attetion
 
-- **Embedding Layer:** Using PhoBERT để biểu diễn từ.
+- **Embedding Layer:** Using PhoBERT to represent words.
 - **Encoder:** Using 2 layers - Transformer Encoder with 256 units.
-- **Optimizer:** AdamW Optimizer với $\text{learning rate} = 2 \times 10^{-5}$.
+- **Optimizer:** AdamW Optimizer with $\text{learning rate} = 2 \times 10^{-5}$.
 - **Loss Function:** Weighted Cross-Entropy Loss with Label Smoothing technique.
 
 ## Data Pipeline
-1. **Text Cleaning:** Loại bỏ nhiễu, chuẩn hóa Unicode (NFC/NFD).
+1. **Text Cleaning:** Eliminate noise, standardize Unicode.
 2. **Tokenization:** Using Underthesea.
-3. **Padding & Masking:** Đảm bảo độ dài đầu vào cố định $L=256$.
+3. **Padding & Masking:** Ensure a fixed input length $L=256$.
 
 ## Install & Using
 
